@@ -7,6 +7,7 @@
 
 html {
   font-family: "Lato", sans-serif;
+  font-size: 62.5%;
   /* user-select: none; */
 }
 /*--------------------- CSS HEADER------------------------------ */
@@ -199,6 +200,37 @@ table > tr {
 table tr td {
   margin-right: 30px;
 }
+/* -------------------CSS SLICE SECTION -------------------- */
+.slice-section {
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.slice-section__container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.slice-section__container--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8f0f2;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  border: 1px solid red;
+}
+.slice-section__container--item i {
+}
+.slice-section__container--item p {
+}
+/* -------------------CSS FOOTER-------------------------- */
 .footer {
   width: 100%;
   background-color: #39a2db;
@@ -234,7 +266,7 @@ table tr td {
   justify-content: space-around;
 }
 .footer-container__about--icon li {
-  font-size: 200%;
+  font-size: 16rem;
   margin: 20px 0;
   list-style-type: none;
 }
