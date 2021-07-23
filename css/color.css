@@ -1,19 +1,10 @@
-*{
-    color: #926E50;
-    /* RGB: (146, 110, 80) */
-
-    color: #CDA169;
-    /* RGB: (205, 161, 105) */
-
-    color: #EFD89A;
-    /* RGB: (239, 216, 154) */
-
-    color: #CC8020;
-    /* RGB: (204, 128, 32) */
-
-    color: #435E39;
-    /* RGB: (67, 94, 57) */
-
-    color: #768A4E;
-    /* RGB: (118, 138, 78) */
+* {
+    color:#053742;
+    color: #39A2DB;
+    color: #A2DBFA;
+    color: #E8F0F2;
+    color: rgb(5, 55, 66);
+    color: rgb(57, 162, 219);
+    color: rgb(162, 219, 250);
+    color: rgb(232, 240, 242);
 }
