@@ -1,0 +1,130 @@
+@import "reset.css";
+@import "background.css";
+
+.intro-services{
+  width: 100%;
+  text-align: center;
+}
+.intro-services > h3{
+  margin: 2rem 0;
+  position: relative;
+}
+.intro-services > h3::after{
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 46%;
+  width: 100px;
+  height: 2px;
+  background-color: red;
+}
+
+.intro-services > p{
+  margin-top: 20px;
+  width: 80%;
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* ______________________________ */
+.primary-main{
+  margin: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.primary-sub{
+  margin: 5rem;
+  display: block;
+  text-align: center;
+  color: aqua;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-shadow: 1px 2px green;
+}
+.primary-sub__text{
+  text-align: center;
+  line-height: 40px;
+  color: gray;
+}
+/* _------------------------- */
+.intro-services__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 100%;
+  height: 500px;
+}
+.intro-services__container h3, .intro-services__container p {
+  margin: 3rem 0;
+}
+.intro-services__container--img > img{
+  width: 90%;
+  transition: transform 1s;
+}
+.intro-services__container--img > img:hover{
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+/* ___________________________________ */
+.about-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-container__img{
+  display: inline;
+  width: 675px;
+  height: 700px;
+  background-image: url("../images/car\ \(14\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+.about-container__text{
+  width: 50%;
+}
+.about-container__text > p{
+  margin: 0 2rem;
+}
+
+.btn{
+  width: 100px;
+  height: 50px;
+  margin: 2rem auto;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 50px;
+}
+.btn a {
+  display: block;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: blueviolet;
+  color: white;
+}
+/* ----------------------US SERVICES------------------------- */
+.our-services__container{
+  margin: 0 auto;
+  width: 100%;
+}
+.our-services__container--row{
+  display: flex;
+  justify-content: space-evenly;
+}
+.our-services__container--item{
+  color:aqua;
+  width: 20%;
+  text-align: justify;
+}
+.our-services__container--item > i{
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+}
+/* --------------------------CSS MAP---------------------- */
+#map{
+  display: none;
+}
