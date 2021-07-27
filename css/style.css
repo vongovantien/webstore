@@ -283,3 +283,61 @@ table tr td {
 .footer-container__map iframe {
   margin-top: 20px;
 }
+/* _------------------------------------------------------------------------ */
+.packages-main {
+border: 1px solid red;
+}
+.vehicle-item-row {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.vehicle-item-col {
+  color: blanchedalmond;
+  padding: 40px;
+  list-style-type: none;
+  transition: all 1s;
+}
+.vehicle-item-col:hover {
+  background-color: aqua;
+  color: gray;
+}
+.vehicle-item__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vehicle-item__icon {
+  flex: 1;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 20px;
+}
+.vehicle-item__text { 
+  flex: 1;
+  font-size: 16px;
+}
+/* -------------------------------------- */
+.packages-sub{
+  display: flex;
+  justify-content: space-evenly;
+}
+.packages-item{
+
+}
+.packages-item h5{
+  font-size: 12px;
+}
+.packages-item__price{
+  display: flex;
+  align-items: flex-start;
+  color: black;
+  font-size: 50px;
+  }
+.packages-item__duration{
+  }
+.packages-item__duration{
+  }
+.packages-item__service-list{
+  }
