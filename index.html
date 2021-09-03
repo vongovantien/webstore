@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HDCarSpa, cham soc, bao duong, xe o to, cham soc o to gia re" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+    <link href="../vendors/icon/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <title>Home</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="#"><img src="../images/logo_car.png" alt="logo"></a>
+      </div>
+      <nav class="header__nav-box">
+        <ul class="header__nav-box--main">
+          <li><a target="black" href="#">home</a></li>
+          <li><a target="black" href="#">pages</a></li>
+          <li><a target="black" href="#">booking</a></li>
+          <li><a target="black" href="#">contact</a></li>
+          <li><a target="black" href="#">đăng ký</a></li>
+          <li>
+            <a href="#">pages<i class="fas fa-caret-down"></i></a>
+            <ul class="header__nav-box--sub">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">policy</a></li>
+              <li><a href="#">report</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <!-- BACKGROUND -->
+    <section class="background-main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="../images/background/bg1.png" alt="Los Angeles">
+          </div>
+
+          <div class="item">
+            <img src="../images/background/bg2.png" alt="Chicago">
+          </div>
+
+          <div class="item">
+            <img src="../images/background/bg3.png" alt="New York">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- INFORMATION -->
+    <section class="section-info">
+      <h4 class="text-title">WHO IS AUTOSPA ?</h4>
+      <span class="text-slogan">Car wash & detailing service</span>
+      <div class="container-info">
+        <div>
+          <img src="../images/bg-info.png" alt="bg-info">
+        </div>
+        <div>
+          <div class="row-1">
+            <p class="text-title__sub">Autospa Hand Wash is an eco-friendly, hand car wash and detailing service based
+              in
+              Portland. Our company was founded back in 2005 by a team of experts with more then 10 years of
+              professional
+              car wash experience. We operate three car washes throught Portland area. Our goal is to provide our
+              customers with the friendliest, most convenient hand car wash experience possible. We use the most modern
+              and up-to-date water reclamation modules as a part of our car wash systems. Our products are all
+              biodegradable and eco-friendly.</p>
+          </div>
+          <div class="row-2">
+            <div class="row-2-sub">
+              <i class="fas fa-water icon-main"></i>
+              <h5 class="text-title__main">THE BEST CAR WASH</h5>
+              <ul class="text-title__sub">
+                <li>We offer multiple services at a great value</li>
+                <li>Multiple car wash locations throughout</li>
+                <li>Biodegradable and eco-friendly products</li>
+                <li>Pay for your wash electronically and securely</li>
+                <li>Trained and skilled car wash crew members</li>
+              </ul>
+            </div>
+            <div class="row-2-sub">
+              <i class="fas fa-comments icon-main"></i>
+              <h5 class="text-title__main">CONTACTING US</h5>
+              <ul class="text-title__sub">
+                <li>We offer multiple services at a great value</li>
+                <li>Multiple car wash locations throughout</li>
+                <li>Biodegradable and eco-friendly products</li>
+                <li>Pay for your wash electronically and securely</li>
+                <li>Trained and skilled car wash crew members</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- VEHICLE -->
+    <section class="packages-main">
+      <h3 class="text-title">WASH PACKAGES</h3>
+      <span class="text-slogan">Which wash is the best for your vehicle?</span>
+
+      <ul class="vehicle-item-row">
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-car-side"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-truck"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-truck-pickup"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-truck-moving"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-caravan"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+
+        <li class="vehicle-item-col">
+          <div class="vehicle-item__container">
+            <div class="vehicle-item__icon"><i class="fas fa-truck-loading"></i></div>
+            <div class="vehicle-item__text">Regular Size Car</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- PACKAGES -->
+    <section class="packages-sub">
+      <div class="packages-item">
+        <h5 class="text-title__main">BASIC HAND WASH</h5>
+        <div class="packages-item__price">
+          <span>100.000</span>
+          <p>VND</p>
+        </div>
+        <div class="packages-item__duration text-title__sub">
+          <i class="far fa-clock"></i><span>30min</span>
+        </div>
+        <ul class="packages-item__service-list  text-title__sub">
+          <li>Exterior Hand Wash</li>
+          <li>Towel Hand Dry</li>
+          <li>Wheel Shine</li>
+        </ul>
+        <div class="btn-booking-box">
+          <a href="#">Book Now</a>
+        </div>
+      </div>
+
+      <div class="packages-item">
+        <h5 class="text-title__main">BASIC HAND WASH</h5>
+        <div class="packages-item__price">
+          <span>200.000</span>
+          <p>VND</p>
+        </div>
+        <div class="packages-item__duration text-title__sub">
+          <i class="far fa-clock"></i><span>40min</span>
+        </div>
+        <ul class="packages-item__service-list  text-title__sub">
+          <li>Exterior Hand Wash</li>
+          <li>Towel Hand Dry</li>
+          <li>Wheel Shine</li>
+          <li>Tire Dressing</li>
+          <li>Windows In & Out</li>
+          <li>Sealer Hand Wax</li>
+        </ul>
+        <div class="btn-booking-box">
+          <a href="#">Book Now</a>
+        </div>
+      </div>
+
+      <div class="packages-item">
+        <h5 class="text-title__main">BASIC HAND WASH</h5>
+        <div class="packages-item__price">
+          <span>280.000</span>
+          <p>VND</p>
+        </div>
+        <div class="packages-item__duration text-title__sub">
+          <i class="far fa-clock"></i><span>60min</span>
+        </div>
+        <ul class="packages-item__service-list  text-title__sub">
+          <li>Exterior Hand Wash</li>
+          <li>Towel Hand Dry</li>
+          <li>Wheel Shine</li>
+          <li>Tire Dressing</li>
+          <li>Windows In & Out</li>
+          <li>Sealer Hand Wax</li>
+          <li>Interior Vacuum</li>
+          <li>Door Shuts & Plastics</li>
+          <li>Dashboard Clean</li>
+          <li>Air Freshener</li>
+          <li>Sealer Hand Wax</li>
+        </ul>
+        <div class="btn-booking-box">
+          <a href="#">Book Now</a>
+        </div>
+      </div>
+
+      <div class="packages-item">
+        <h5 class="text-title__main">BASIC HAND WASH</h5>
+        <div class="packages-item__price">
+          <span>350.000</span>
+          <p>VND</p>
+        </div>
+        <div class="packages-item__duration text-title__sub">
+          <i class="far fa-clock"></i><span>100min</span>
+        </div>
+        <ul class="packages-item__service-list  text-title__sub">
+          <li>Exterior Hand Wash</li>
+          <li>Towel Hand Dry</li>
+          <li>Wheel Shine</li>
+          <li>Tire Dressing</li>
+          <li>Windows In & Out</li>
+          <li>Sealer Hand Wax</li>
+          <li>Interior Vacuum</li>
+          <li>Door Shuts & Plastics</li>
+          <li>Dashboard Clean</li>
+          <li>Air Freshener</li>
+          <li>Sealer Hand Wax</li>
+          <li>Triple Coat Hand Wax</li>
+          <li>Exterior Vinyl Protectant</li>
+          <li>Rain-X Complete</li>
+        </ul>
+        <div class="btn-booking-box">
+          <a href="#">Book Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="our-value">
+      <h5 class="text-title">OUR VALUE</h5>
+      <span class="text-slogan">Hay cho chung toi</span>
+      <div class="container-col-2">
+        <div class="img-col"></div>
+        <div class="item-col">
+          <div class="item-col__main">
+            <div class="item-col__sub">
+              <i class="fas fa-map-marked-alt icon-main"></i>
+              <h5 class="text-title__main">CONVENIENCE</h5>
+              <p class="text-title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit.</p>
+            </div>
+            <div class="item-col__sub">
+              <i class="fas fa-gas-pump icon-main"></i>
+              <h5 class="text-title__main">CONVENIENCE</h5>
+              <p class="text-title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit.</p>
+            </div>
+            <div class="item-col__sub">
+              <i class="fas fa-user-friends icon-main"></i>
+              <h5 class="text-title__main">CONVENIENCE</h5>
+              <p class="text-title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit.</p>
+            </div>
+            <div class="item-col__sub">
+              <i class="fas fa-hand-holding-heart icon-main"></i>
+              <h5 class="text-title__main">CONVENIENCE</h5>
+              <p class="text-title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PROJECT -->
+    <section>
+      <h5 class="text-title">OUR PROJECTS</h5>
+      <span class="text-sologan text-slogan">Car wash gallery</span>
+      <div class="our-project"></div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="activity">
+        <div class="activity__item">
+          <i class="fas fa-phone-square icon-main"></i>
+          <div>
+            <h5 class="text-title__main">CALL US AT</h5>
+            <p class="text-title__sub">
+              (+505) 122 225 225
+            </p>
+            <p class="text-title__sub">
+              (+505) 122 225 225
+            </p>
+          </div>
+        </div>
+        <div class="activity__item">
+          <i class="fas fa-map-marker-alt icon-main"></i>
+          <div>
+            <h5 class="text-title__main">OUR ADDRESS</h5>
+            <p class="text-title__sub">
+              464 Rhode Island Av.
+            </p>
+            <p class="text-title__sub">
+              Portland, OR 97219
+            </p>
+          </div>
+        </div>
+
+        <div class="activity__item">
+          <i class="fas fa-briefcase icon-main"></i>
+          <div>
+            <h5 class="text-title__main">WORKING HOURS</h5>
+            <p class="text-title__sub">
+              Monday–Friday: 8am–6 pm
+            </p>
+            <p class="text-title__sub">
+              Saturday: 8am–3pm
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-show-map">
+        <button class="btn">HIRE MAP</button>
+      </div>
+      <!-- MAP -->
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5543.439848171354!2d106.87495178534954!3d10.749591015827463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317523edaef55c31%3A0x4645bca5e90e4664!2zQ-G7rWEgSMOgbmcgS2ltIEtow60gxJBp4buHbiBNw6F5IEjGr-G7mk5HIERVWcOKTg!5e0!3m2!1sen!2s!4v1626872847425!5m2!1sen!2s"
+          width="100%" height="400px" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- FOOTER-SUB -->
+      <div class="footer-sub__container">
+        <div class="footer-sub__box">
+          <div class="footer-sub__item">
+            <h5>about</h5>
+            <p class="text-title__sub">Autospa Hand Wash is an eco-friendly hand car wash and detailing service based in
+              Portland.</p>
+            <a href="#"><img src="../images/sub-logopng.png" alt="sub-logo"></a>
+          </div>
+
+          <div class="footer-sub__item">
+            <h5>company</h5>
+            <ul class="footer-sub__item--nav">
+              <li><a href="#">home</a></li>
+              <li><a href="#">booking</a></li>
+              <li><a href="#">pages</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-sub__item">
+            <h5>email</h5>
+            <input type="email" name="EMAIL" id="EMAIL" placeholder="Nhập vào email của bạn ...">
+            <div class="footer-sub__item--submit">
+              <a href="#">Submit</a>
+            </div>
+          </div>
+        </div>
+        <div class="copy-writer">
+          <i src="#" class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-paypal"></i>
+          <p>Copywriter @ 2021 Võ Ngô Văn Tiền</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

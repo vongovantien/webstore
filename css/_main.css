@@ -1,0 +1,50 @@
+
+.text-title {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+  color: #FA9100;
+  position: relative;
+}
+.text-title::after{
+  content: "";
+  display:block;
+  height: 3rem;
+  left: 50%;
+  top: 3rem;
+  bottom: 3rem;;
+  background-color: #006BAD;
+  position: absolute;
+}
+.text-title__main{
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+.text-title__sub{
+  color: #B2B1B9;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+  line-height: 30px;
+  padding: 20px;
+}
+.text-slogan {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  color: #79C9FA;
+  font-style: italic;
+}
+.icon-main {
+  display: block !important;
+  text-align: center;
+  font-size: 4rem;
+  color: #39a2db;
+}

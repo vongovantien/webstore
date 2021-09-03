@@ -1,0 +1,74 @@
+/* CSS HEADER */
+
+.header {
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+.header__logo-box img {
+  width: 100%;
+  height: auto;
+}
+
+.header__nav-box--main li {
+  position: relative;
+  display: inline-block;
+}
+
+.header__nav-box--main li a {
+  padding: 0 20px;
+
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #AD6500;
+}
+
+.header__nav-box--main li:hover .header__nav-box--sub {
+  display: block;
+}
+
+.header__nav-box--sub {
+  position: absolute;
+  display: none;
+  width: 200%;
+  background-color: #B2B1B9;
+}
+
+.header__nav-box--sub a {
+  display: block;
+  width: 100%;
+}
+.header__nav-box--sub li:hover a{
+  opacity: 0.5;
+  transition: all 1s;
+  display: block;
+  background-color: #FF9F19;
+  color: #006BAD;
+}
+
+
+.header__icon{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 2rem;
+
+}
+.header__icon i{
+  margin: 10px 20px;
+  cursor: pointer;
+}

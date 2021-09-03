@@ -1,0 +1,359 @@
+@import "_reset.css";
+/*-------------------------------------------------- CSS HEADER------------------------------- */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.header__logo-box{
+  width: 30%;
+}
+.header__logo-box img {
+  width: 100%;
+  height: auto;
+}
+
+.header__nav-box--main li {
+  position: relative;
+  display: inline-block;
+}
+
+.header__nav-box--main li a {
+  padding: 0 20px;
+
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #AD6500;
+}
+
+.header__nav-box--main li:hover .header__nav-box--sub {
+  display: block;
+}
+
+.header__nav-box--sub {
+  position: absolute;
+  display: none;
+  width: 200%;
+  background-color: #B2B1B9;
+}
+
+.header__nav-box--sub a {
+  display: block;
+  width: 100%;
+}
+.header__nav-box--sub li:hover a{
+  opacity: 0.5;
+  transition: all 1s;
+  display: block;
+  background-color: #FF9F19;
+  color: #006BAD;
+}
+
+.header__icon{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 2rem;
+
+}
+.header__icon i{
+  margin: 10px 20px;
+  cursor: pointer;
+}
+/* --------------------------CSS BODY --------------------------- */
+.background {
+    width: 100%;
+    height: 500px;
+    margin-top: 110px;
+    background-image: url("../images/car\ \(12\).png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* ----------------------------------------------CSS CHUNG ---------------------------------------*/
+
+.text-title {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 5px;
+  line-height: 10rem;
+  text-align: center;
+  color: #FA9100;
+}
+.text-title::after{
+  content: "";
+  display:block;
+  margin: 0 auto;
+  height: 5px;
+  width: 10%;
+  background-color: #006BAD;
+}
+.text-title__main{
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+.text-title__sub{
+  display: block;
+  color: #B2B1B9;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.text-slogan {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 5rem 0;
+  color: #79C9FA;
+  font-style: italic;
+}
+.icon-main {
+  display: block !important;
+  text-align: center;
+  font-size: 4rem;
+  color: #39a2db;
+}
+/* __trang */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.4rem;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/* trang */
+.our-item{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.container{
+  padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-container{
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.item-pic{
+    position: relative;
+    margin: 10px;
+}
+.item-tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px 0;
+    padding: 5px;
+    background-color: #FA9100;
+    color: white;
+    font-size: 1.6rem;
+}
+.item-add-cart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,.8);
+    transition: all 0.4s;
+}
+.item-add-cart:hover{
+    opacity: 1;
+    z-index: 99;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.add-cart{
+    opacity: 0.5;
+    background-color: #FF9F19;
+    border-color: #FF9F19;
+}
+.add-cart:hover{
+    opacity: 1;
+}
+.add-cart:active{
+    box-shadow: 0px 2px 3px white;
+}
+.item-price{
+    display: block;
+    margin: 0 auto;
+    color: red;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+.brand{
+  width: 80%;
+  margin: 0 auto;
+}
+.brand-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand-item{
+  padding: 20px;
+}
+/* CSS FOOTER */
+footer {
+  margin: 100px 0;
+}
+.activity {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.activity__item {
+  display: flex;
+}
+/* CSS FOOTER-SUB */
+.footer-sub__container {
+  margin: 0 auto;
+  background-color: #494949;
+}
+.footer-sub__container h5 {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-sub__box{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-sub__item{
+  flex: 1;
+  padding: 3rem;
+  width: 33%;
+}
+.footer-sub__item > h5{
+  text-transform: uppercase;
+
+}
+.footer-sub__item img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-sub__item--nav {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-sub__item--nav a{
+  text-decoration: none;
+  color: #B2B1B9;
+}
+
+.footer-sub__item--nav li:hover a {
+  transition: 2s;
+  text-decoration: underline;
+}
+input[type=email] {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  padding: 1rem;
+  height: 50px;
+  font-size: 1.4rem;
+  color: #FF9F19;
+  border-radius: 50px;
+  background-color: rgb(53, 51, 51);
+  border: 0.5px solid white;
+  margin-bottom: 40px;
+}
+input[type=email]:focus {
+  color: #FF9F19;
+  font-size: 1.4rem;
+  border: 2px solid #FF9F19;
+}
+
+.footer-sub__item--submit {
+  text-align: center;
+  font-weight: 600;
+}
+.footer-sub__item--submit a{
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #FF9F19;
+  border-radius: 40px;
+}
+.footer-sub__item--submit:hover a {
+  background: #FF9F19;
+  color: #006BAD;
+}
+.copy-writer {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+}
+.copy-writer i {
+  padding: 20px;
+}
+.copy-writer i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
