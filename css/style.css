@@ -3,7 +3,6 @@
 
 .section-info {
   width: 100%;
-  height: auto;
 }
 
 .container-info {
@@ -11,9 +10,6 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-}
-.container-info:first-child img{
-  width: 100%;
 }
 .container-info:last-child {
   display: flex;
@@ -23,15 +19,26 @@
   font-size: 16px;
   color: grey;
 }
-.container-info:last-child .row-2 {
+.row-2 {
   padding-left: 50px;
   display: flex;
   justify-content: space-evenly;
 }
 .container-info:last-child .row-2-sub{
-  flex: 1;
   margin: 30px 0;
   padding: 20px;
+}
+.section-info-item{
+  display: flex;
+  flex-direction: column;
+}
+.row-2-sub > ul {
+  list-style-type: none;
+}
+.section-info-img{
+}
+.section-info-img > img{
+  width: 100%;
 }
 /* --------------------------------------CSS WASH PACKAGE------------------------------------ */
 /* ------VEHICLE-------- */
@@ -142,17 +149,13 @@
   background-color: #e8f0f2
 
 }
-.img-col {
-  background-image: url("../images/cleaning-1837331_1920.jpg");
-  background-position: center;
-  background-size: cover;
-  display: inline;
-  height: 700px;
-  flex: 1;
+.img-col{
+}
+.img-col > img{
+  width: 100%;
   overflow: hidden;
 }
 .item-col {
-  flex: 1;
   display: flex;
   align-items: center;
 }
@@ -290,47 +293,60 @@ input[type=email]:focus {
   cursor: pointer;
 }
 /* -----------------------------------------CSS PROJECT----------------------------------*/
-.our-project{
-  width: 100%;
-  height: 600px;
-  background-image: linear-gradient(to right bottom,
-  rgba(203, 238, 5, 0.5), 
-  rgba(21,51,21,0.5)),
-  url("../images/car\ \(8\).png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.layout{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
 }
-/*-------------------------------------------------- CSS HEADER------------------------------- */
 
+/*-------------------------------------------------- CSS HEADER------------------------------- */
+.icon-bar {
+  padding: 10px;
+  color: black;
+  font-size: 22px;
+  border: 1px solid black;
+  display: none;
+  float: right;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
 .header {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 18px;
+  background-color: #B2B1B9;
+}
+.fixed-top {
   position: fixed;
   top: 0;
   left: 0;
+  right:0;
   z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 700;
+  opacity: 0.5;
 }
 .header__logo-box{
-  width: 30%;
+  flex: 1;
 }
 .header__logo-box img {
   width: 100%;
   height: auto;
 }
 
+.header__nav-box--main{
+  margin: 10px;
+}
 .header__nav-box--main li {
   position: relative;
   display: inline-block;
+  padding: 0 20px;
 }
 
 .header__nav-box--main li a {
-  padding: 0 20px;
 
   letter-spacing: 1px;
   line-height: 50px;
@@ -347,7 +363,6 @@ input[type=email]:focus {
 .header__nav-box--sub {
   position: absolute;
   display: none;
-  width: 200%;
   background-color: #B2B1B9;
 }
 
@@ -367,7 +382,7 @@ input[type=email]:focus {
 .header__icon{
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   font-size: 2rem;
 
@@ -381,9 +396,8 @@ input[type=email]:focus {
 
 .text-title {
   text-transform: uppercase;
-  letter-spacing: 1rem;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 16px;
   margin: 5px;
   line-height: 10rem;
   text-align: center;
@@ -393,7 +407,7 @@ input[type=email]:focus {
   content: "";
   display:block;
   margin: 0 auto;
-  height: 5px;
+  height: 2px;
   width: 10%;
   background-color: #006BAD;
 }
@@ -401,20 +415,20 @@ input[type=email]:focus {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 16px;
   color: #006BAD;
 }
 .text-title__sub{
   color: #B2B1B9;
   word-spacing: 2px;
   letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 16px;
   line-height: 2rem;
 }
 .text-slogan {
   display: block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 16px;
   margin: 5rem 0;
   color: #79C9FA;
   font-style: italic;
