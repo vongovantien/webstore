@@ -1,9 +1,14 @@
 {
-  "liveServer.settings.ChromeDebuggingAttachment": false,
-  "files.autoSave": "afterDelay",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  }
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "files.autoSave": "onWindowChange",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.quickSuggestions": null,
+    "html.hover.references": false,
+    "css.hover.documentation": false,
+    "css.hover.references": false,
+    "html.hover.documentation": false
 }
