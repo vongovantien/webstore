@@ -22,20 +22,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 /* Progress Bar */
 .our-progress {
     position: fixed;
     top: 0;
     left: 0;
-    height: 3px;
+    height: 4px;
     background-color: #fa9100;
     z-index: 999;
 }
@@ -210,23 +202,28 @@ li > i {
     list-style-type: none;
 }
 
+.active-vehicle {
+    cursor: pointer;
+    border-radius: 10px;
+    color: darkgoldenrod;
+    background-color: darkgreen;
+}
+
 .vehicle-item-container:hover {
-    background-color: #ff9f19;
-    color: #006bad;
-    border: 1px solid #ff9f19;
-    box-shadow: 2px 4px 5px rgba(53, 51, 51, 0.6);
     cursor: pointer;
 }
 .vehicle-item-container:active {
+    cursor: pointer;
+    border-radius: 10px;
     box-shadow: 2px 5px 5px#666;
-    transform: translateY(4px);
 }
-
 .vehicle-item-container {
     border: 1px solid #b2b1b9;
     border-radius: 10px;
-    color: #b2b1b9;
+    color: #ccc;
     padding: 10px;
+    height: 120px;
+    width: 150px;
 }
 
 .vehicle-item-icon {
@@ -235,7 +232,8 @@ li > i {
 }
 
 .vehicle-item-text {
-    color: blue;
+    text-align: center;
+    color: #ccc;
     font-size: 1.5rem;
     margin: 10px 0;
 }
@@ -256,11 +254,12 @@ li > i {
     flex-direction: column;
     border: 1px solid #b2b1b9;
     padding: 15px;
+    width: 20%;
 }
 .packages-item-container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-grow: 1;
 }
 .packages-item-price {
     font-size: 4rem;
@@ -328,6 +327,7 @@ li > i {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .time-img {
     width: 40%;
@@ -394,7 +394,12 @@ li > i {
 .footer-items > li > a {
     color: white !important;
 }
-
+.footer-item > span {
+    display: block;
+    color: white;
+    padding: 10px;
+    font-size: 1.4rem !important;
+}
 .footer-items li:hover > a {
     opacity: 0.5;
     color: black !important;
@@ -592,7 +597,7 @@ input[type="email"] {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 50%;
+    left: 70%;
     background-color: black;
     z-index: 9999;
 }

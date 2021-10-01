@@ -2,6 +2,9 @@
     .header {
         display: none;
     }
+    .mobile-items{
+        font-size: 1.2rem;
+    }
     #myCarousel {
         max-width: 100%;
         height: auto;
@@ -75,15 +78,18 @@
         margin: 0;
     }
     /* RES Package */
+    .time-sale {
+        height: 200px;
+    }
     .packages-item {
         padding: 10px;
     }
     .vehicle-item-container {
         padding: 5px;
+        margin: 10px;
     }
     .vehicle-item-text {
-        color: blue;
-        font-size: 1rem;
+        color: #ccc;
     }
     .packages-item-price {
         font-size: 3rem;
@@ -305,6 +311,17 @@
     }
     input[type="email"] {
         padding: 10px;
+    }
+    /* ==============RES index================ */
+    .time-sale {
+        flex-wrap: wrap;
+        height: 600px;
+    }
+    .time-count > h3 {
+        line-height: 30px;
+    }
+    .time-img {
+        width: 80%;
     }
     /* ==================RES Service================= */
     .intro-services-items {

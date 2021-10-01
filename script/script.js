@@ -58,7 +58,7 @@ $(document).ready(function () {
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
-        var progress = (100 * pixels) / pageHeight;
+        var progress = (pixels / pageHeight) * 100;
 
         $("div.our-progress").css("width", progress + "%");
     });
@@ -101,14 +101,14 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 2500) {
-            if (bookTimer === null) bookTimer = inc(book, 53, 1060, "book");
-            if (washTimer === null) washTimer = inc(wash, 1316, 26320, "wash");
-            if (reviewTimer === null) reviewTimer = inc(review, 79, 1580, "review");
-            if (tipTimer === null) tipTimer = inc(tip, 200, 4000, "tip");
+            if (bookTimer === null) bookTimer = runNum(book, 53, 1060, "book");
+            if (washTimer === null) washTimer = runNum(wash, 1316, 26320, "wash");
+            if (reviewTimer === null) reviewTimer = runNum(review, 79, 1580, "review");
+            if (tipTimer === null) tipTimer = runNum(tip, 200, 4000, "tip");
         }
     });
 });
-function inc(el, steps, max, type) {
+function runNum(el, steps, max, type) {
     var value = parseInt(el.text());
     return setInterval(function () {
         value += steps;
