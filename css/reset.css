@@ -1,11 +1,17 @@
+/* CSS RESET */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     font-family: "Lato", sans-serif;
-    font-size: 100%;
-    /* user-select: none; */
-  }
+    font-size: 62.5%;
+    /* user-select: none;*/
+}
+*::selection {
+    background: #fff600;
+    color: rgb(27, 154, 208);
+    text-shadow: none;
+}
