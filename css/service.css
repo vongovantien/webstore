@@ -290,21 +290,21 @@ ul > li {
     margin-top: 50px;
     text-align: center;
 }
-.intro-services {
+.intro-service {
     width: 80%;
     margin: 0 auto;
 }
-.intro-services-items {
+.intro-service-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
 }
-.intro-services-item {
+.intro-service-item {
     width: 30%;
     padding: 20px;
 }
-.intro-services-item > div {
+.intro-service-item > div {
     overflow: hidden;
 }
 

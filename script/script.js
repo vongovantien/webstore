@@ -29,6 +29,7 @@ $(document).ready(function () {
         if ($(this).scrollTop() >= 500) $("#gototop").css("opacity", 1).show();
         else $("#gototop").css("opacity", 0).hide();
     });
+
     // scroll to top
     $("#gototop").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 1000);
