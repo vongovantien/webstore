@@ -324,10 +324,10 @@
         width: 80%;
     }
     /* ==================RES Service================= */
-    .intro-services-items {
+    .intro-service-items {
         flex-wrap: wrap;
     }
-    .intro-services-item {
+    .intro-service-item {
         width: 100%;
     }
     .l-height {
